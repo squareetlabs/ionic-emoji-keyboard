@@ -1,0 +1,123 @@
+<div class="emoji-wrapper-component" [style]="height">
+    <ion-segment [value]="recentOld.length > 0 ? 'recentOld' : 'smileys'" [(ngModel)]="type" [mode]="mode" [scrollable]="true">
+        <ion-segment-button value="recentOld" *ngIf="recentOld.length > 0">
+            <ion-icon name="time-outline"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="smileys">
+            <ion-icon name="happy-outline"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="foods">
+            <ion-icon name="fast-food-outline"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="animals">
+            <ion-icon name="flower-outline"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="activities">
+            <ion-icon name="football-outline"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="travel">
+            <ion-icon name="bicycle-outline"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="symbols">
+            <ion-icon name="fitness-outline"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="flag">
+            <ion-icon name="flag-outline"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="objects">
+            <ion-icon name="flask-outline"></ion-icon>
+        </ion-segment-button>
+    </ion-segment>
+    <div [ngSwitch]="type" class="emoji-wrapper">
+        <ng-container *ngSwitchCase="'recentOld'">
+            <ion-content [color]="color">
+                <ul>
+                    <li *ngFor="let item of recentOld" class="ion-activatable ripple-parent" (click)="onEvent('onSelectEmoji', item)">
+                        {{item.emoji}}
+                        <ion-ripple-effect></ion-ripple-effect>
+                    </li>
+                </ul>
+            </ion-content>
+        </ng-container>
+        <ng-container *ngSwitchCase="'smileys'">
+            <ion-content [color]="color">
+                <ul>
+                    <li *ngFor="let item of smileys" class="ion-activatable ripple-parent" (click)="onEvent('onSelectEmoji', item)">
+                        {{item.emoji}}
+                        <ion-ripple-effect></ion-ripple-effect>
+                    </li>
+                </ul>
+            </ion-content>
+        </ng-container>
+        <ng-container *ngSwitchCase="'foods'">
+            <ion-content [color]="color">
+                <ul>
+                    <li *ngFor="let item of foods" class="ion-activatable ripple-parent" (click)="onEvent('onSelectEmoji', item)">
+                        {{item.emoji}}
+                        <ion-ripple-effect></ion-ripple-effect>
+                    </li>
+                </ul>
+            </ion-content>
+        </ng-container>
+        <ng-container *ngSwitchCase="'animals'">
+            <ion-content [color]="color">
+                <ul>
+                    <li *ngFor="let item of animals" class="ion-activatable ripple-parent" (click)="onEvent('onSelectEmoji', item)">
+                        {{item.emoji}}
+                        <ion-ripple-effect></ion-ripple-effect>
+                    </li>
+                </ul>
+            </ion-content>
+        </ng-container>
+        <ng-container *ngSwitchCase="'activities'">
+            <ion-content [color]="color">
+                <ul>
+                    <li *ngFor="let item of activities" class="ion-activatable ripple-parent" (click)="onEvent('onSelectEmoji', item)">
+                        {{item.emoji}}
+                        <ion-ripple-effect></ion-ripple-effect>
+                    </li>
+                </ul>
+            </ion-content>
+        </ng-container>
+        <ng-container *ngSwitchCase="'travel'">
+            <ion-content [color]="color">
+                <ul>
+                    <li *ngFor="let item of travel" class="ion-activatable ripple-parent" (click)="onEvent('onSelectEmoji', item)">
+                        {{item.emoji}}
+                        <ion-ripple-effect></ion-ripple-effect>
+                    </li>
+                </ul>
+            </ion-content>
+        </ng-container>
+        <ng-container *ngSwitchCase="'symbols'">
+            <ion-content [color]="color">
+                <ul>
+                    <li *ngFor="let item of symbols" class="ion-activatable ripple-parent" (click)="onEvent('onSelectEmoji', item)">
+                        {{item.emoji}}
+                        <ion-ripple-effect></ion-ripple-effect>
+                    </li>
+                </ul>
+            </ion-content>
+        </ng-container>
+        <ng-container *ngSwitchCase="'flag'">
+            <ion-content [color]="color">
+                <ul>
+                    <li *ngFor="let item of flag" class="ion-activatable ripple-parent" (click)="onEvent('onSelectEmoji', item)">
+                        {{item.emoji}}
+                        <ion-ripple-effect></ion-ripple-effect>
+                    </li>
+                </ul>
+            </ion-content>
+        </ng-container>
+        <ng-container *ngSwitchCase="'objects'">
+            <ion-content [color]="color">
+                <ul>
+                    <li *ngFor="let item of objects" class="ion-activatable ripple-parent" (click)="onEvent('onSelectEmoji', item)">
+                        {{item.emoji}}
+                        <ion-ripple-effect></ion-ripple-effect>
+                    </li>
+                </ul>
+            </ion-content>
+        </ng-container>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+{
+  "name": "ionic-emoji-keyboard",
+  "version": "1.0.0",
+  "description": "Simple angular emoji keyboard for Ionic 6+",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squareetlabs/ionic-emoji-keyboard.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/squareetlabs/ionic-emoji-keyboard",
+  "keywords": [
+    "ionic6 emoji keyboard",
+    "ionic 6 emoji keyboard",
+    "ionic6 emoji picker",
+    "ionic 6 emoji picker",
+    "ionic6 emoji",
+    "ionic7 emoji keyboard",
+    "ionic 7 emoji keyboard",
+    "ionic7 emoji picker",
+    "ionic 7 emoji picker",
+    "ionic7 emoji",
+    "ionic emojipicker",
+    "ionic-emoji-picker",
+    "ionic-emoji-keyboard",
+    "squareetlabs"
+  ],
+  "author": {
+    "name": "Jacobo Cantorna Cigarrán",
+    "email": "jacobo@squareet.com.com",
+    "url": "https://squareet.com"
+  },
+  "contributors": [{
+    "name": "Alberto Rial Barreiro",
+    "email": "alberto@squareet.com",
+    "url": "https://squareet.com"
+  }],
+  "peerDependencies": {
+    "@angular/common": ">=12.2.0",
+    "@angular/core": ">=12.2.0",
+    "@ionic/angular": ">=6.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
