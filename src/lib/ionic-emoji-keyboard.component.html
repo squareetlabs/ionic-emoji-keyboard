@@ -1,4 +1,4 @@
-<div class="emoji-wrapper-component" [style]="height">
+<div class="emoji-wrapper-component" [style]="heightStyle">
     <ion-segment [value]="recentOld.length > 0 ? 'recentOld' : 'smileys'" [(ngModel)]="type" [mode]="mode" [scrollable]="true">
         <ion-segment-button value="recentOld" *ngIf="recentOld.length > 0">
             <ion-icon name="time-outline"></ion-icon>

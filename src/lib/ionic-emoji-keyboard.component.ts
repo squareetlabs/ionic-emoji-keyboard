@@ -85,9 +85,9 @@ export class IonicEmojiKeyboardComponent implements OnChanges, AfterViewInit {
     ngOnChanges(changes: SimpleChanges) {
         const that = this;
         if (changes?.hide?.currentValue) {
-            this.height = "height:" + this.heightStyle;
+            this.heightStyle = "height:" + this.height;
         } else {
-            this.height = "height: 0px";
+            this.heightStyle = "height: 0px";
             if (this.recentChange) {
                 let recent = this.loadData.getObject("recent_emoji");
                 this.recentChange = false;

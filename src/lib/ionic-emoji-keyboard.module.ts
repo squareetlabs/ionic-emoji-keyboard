@@ -3,7 +3,6 @@ import { IonicEmojiKeyboardComponent } from './ionic-emoji-keyboard.component';
 import {IonicModule} from "@ionic/angular";
 import {FormsModule} from "@angular/forms";
 import {NgForOf, NgIf, NgSwitch, NgSwitchCase} from "@angular/common";
-import {IonicStorageModule} from "@ionic/storage-angular";
 import {IonicEmojiKeyboardService} from "./ionic-emoji-keyboard.service";
 
 @NgModule({
@@ -19,7 +18,7 @@ import {IonicEmojiKeyboardService} from "./ionic-emoji-keyboard.service";
         NgIf
     ],
   exports: [
-    IonicEmojiKeyboardComponent
+    IonicEmojiKeyboardComponent,
   ]
 })
 export class IonicEmojiKeyboardModule {
