@@ -88,7 +88,7 @@ And in your page html file as follows:
 | emojiSelected   | EventEmitter\<Emoji\>  | Emits when an emoji is selected in the component.               |
 
 
-## Publishing
+## Building
 
 Run `ng build ionic-emoji-keyboard` to build the project. The build artifacts will be stored in the `dist/` directory.
 
@@ -109,6 +109,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [Alberto Rial Barreiro](https://github.com/alberto-rial)
 - [Jacobo Cantorna Cigarrán](https://github.com/jcancig)
 - [Desarrollo de apps para moviles](https://squareet.com/desarrollo-de-aplicaciones-para-moviles) SquareetLabs
-- 
+
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
